@@ -1,4 +1,4 @@
-object Solution {
+object MaxSliceSwapRecursive {
 	def solution(A: Array[Int]): Int = {
 		//
 		// Construct left and right sums, combine results
