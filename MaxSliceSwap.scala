@@ -9,12 +9,11 @@ object MaxSliceSwap {
 
 		var left  = leftSliceSum(A)
 		var right = leftSliceSum(A.reverse)
-		right = (right._1.reverse, right._2.reverse)
 
 		var maxSum = 0
 		var i = 0
 		while( i < Nplus2 ){
-			maxSum = math.max(maxSum, math.max(left._1(i)+right._2(i), left._2(i)+right._1(i)))
+			maxSum = math.max(maxSum, math.max(left._1(i)+right._2(Nplus2-1-i), left._2(i)+right._1(Nplus2-1-i)))
 			i += 1
     	}
     	// 
