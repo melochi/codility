@@ -3,7 +3,7 @@ import scala.collection.JavaConversions._
 // you can write to stdout for debugging purposes, e.g.
 // println("this is a debug message")
 
-object Solution {
+object MaxSliceSwap {
 	def solution(A: Array[Int]): Int = {
 		val Nplus2 = A.length + 2
 
